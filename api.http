@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title" : "evento teste2",
+    "details" : "evento teste2",
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/ee7e437d-b585-4391-b4d5-8db8ea3e8cd7/attendees
+Content-Type: application/json
+
+{
+    "name": "Luis Cesar",
+    "email": "lc.albuquerque@gmail.com"
+    
+}
+
+###
+
+GET http://localhost:3333/events/ee7e437d-b585-4391-b4d5-8db8ea3e8cd7
+
+
+###
+
+GET http://localhost:3333/attendees/10/badge
+
+###
+
+GET http://localhost:3333/attendees/10/check-in
+
+###
+
+GET http://localhost:3333/events/ee7e437d-b585-4391-b4d5-8db8ea3e8cd7/attendees
